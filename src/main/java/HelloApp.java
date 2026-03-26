@@ -1,5 +1,14 @@
 public class HelloApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        String names;
+
+        if (args.length == 0) {
+            names = "World";
+        } else {
+            names = String.join(", ", args);
+        }
+
+        System.out.println("Hello, " + names + "!");
     }
 }
